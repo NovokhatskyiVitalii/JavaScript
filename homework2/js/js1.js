@@ -1,6 +1,6 @@
 let vegetables = ["Капуста", "Репа", "Редиска", "Морковка"];
-let String = vegetables.toString();
-console.log(String);
+let veg = vegetables.toString();
+console.log(veg);
 
 let names = "Вася, Петя, Вова, Олег";
 let arr = names.split(', ')
@@ -8,16 +8,16 @@ console.log(arr);
 
 let name = "Василий";
 function hello2(name) {
-    if (name === undefined) name = "гость";
+    if (!name) name = "гость";
     console.log("Привет, " + name + ".");
 }
 hello2(name);
 
 const fruits = ["яблоко", "ананас", "груша"];
-const fruitsUpper = fruits.map(element => {
+const fruitsupper = fruits.map(element => {
     return element.toUpperCase();
 });
-console.log(fruitsUpper);
+console.log(fruitsupper);
 
 let num = [1, 2, 3, 4];
 plusNumber(num);
@@ -33,11 +33,11 @@ function add(x, y, z, w) {
 }
 console.log(add(1, 2, 3, 4));
 
-const onlyNum = [1, "hello", 2, 3, 4, "5", "6", 7, null];
-console.log(onlyNum);
-console.log((onlyNum.filter(item => typeof item === "number")));
+const onlynum = [1, "hello", 2, 3, 4, "5", "6", 7, null];
+console.log(onlynum);
+console.log((onlynum.filter(item => typeof item === "number")));
 
-let haveTrueValue = arrayTest([0, false, null, 1, true]);
+let havetruevalue = arrayTest([0, false, null, 1, true]);
 function arrayTest(myArray){
     for(const element of myArray){
         if(element === true ){
@@ -46,4 +46,4 @@ function arrayTest(myArray){
     }
     return "Ничего нет";
 }
-console.log(haveTrueValue);
+console.log(havetruevalue);
