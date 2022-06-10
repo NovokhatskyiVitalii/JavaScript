@@ -1,8 +1,8 @@
-let vegetables = ['Капуста', 'Репа', 'Редиска', 'Морковка'];
+let vegetables = ["Капуста", "Репа", "Редиска", "Морковка"];
 let String = vegetables.toString();
 console.log(String);
 
-let names = 'Вася, Петя, Вова, Олег';
+let names = "Вася, Петя, Вова, Олег";
 let arr = names.split(', ')
 console.log(arr);
 
@@ -13,7 +13,7 @@ function hello2(name) {
 }
 hello2(name);
 
-const fruits = ['яблоко', 'ананас', 'груша'];
+const fruits = ["яблоко", "ананас", "груша"];
 const fruitsUpper = fruits.map(element => {
     return element.toUpperCase();
 });
