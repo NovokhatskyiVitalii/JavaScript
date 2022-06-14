@@ -1,6 +1,5 @@
-let vegetables = ["Капуста", "Репа", "Редиска", "Морковка"];
-let veg = vegetables.toString();
-console.log(veg);
+let veg = ["Капуста", "Репа", "Редиска", "Морковка"];
+console.log(veg.join("|"));
 
 let names = "Вася, Петя, Вова, Олег";
 let arr = names.split(', ')
@@ -46,13 +45,10 @@ console.log((onlynum.filter(function (item)  {
     return  typeof item === "number"
   })));
 
-let havetruevalue = arrayTest([0, false, null, 1, true]);
-function arrayTest(myArray){
-    for(const element of myArray){
-        if(element === true ){
-            return "Нашли true значение";
+
+function arrayTest(element) {
+        return element === true;
         }
-    }
-    return "Ничего нет";
-}
-console.log(havetruevalue);
+  let haveTrueValue = [0, 3, null, 1, true];
+  let dontHaveTrueValue = [0, false, null, "str"];
+  console.log(haveTrueValue.some(arrayTest));
