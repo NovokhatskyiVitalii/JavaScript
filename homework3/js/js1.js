@@ -87,6 +87,6 @@ console.log(task6(7));
 function task7(size, weekConsumption, weeks) {
   let totalConsumption = weekConsumption * weeks;
   let totalQuantity = totalConsumption / size;
-  return Math.ceil(totalQuantity);
+   return totalQuantity;
 }
-console.log(task7(500, 1200, 8));
+console.log(task7(500, 1200, 8).toFixed(0));
