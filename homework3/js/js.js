@@ -87,6 +87,12 @@ console.log(task6(7));
 function task7(size, weekConsumption, weeks) {
   let totalConsumption = weekConsumption * weeks;
   let totalQuantity = totalConsumption / size;
+<<<<<<< HEAD:homework3/js/js.js
   return totalQuantity;
 }
 console.log(task7(500, 1200, 8).toFixed(0));
+=======
+   return totalQuantity;
+}
+console.log(task7(500, 1200, 8).toFixed(0));
+>>>>>>> ec552ce61c4544bb530770ec02fdc2e5c0755f2d:homework3/js/js1.js
