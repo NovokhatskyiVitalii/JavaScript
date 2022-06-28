@@ -44,13 +44,13 @@ console.log(result);
 
 //task4
 const citiesAndCountries = {
-    'Киев': 'Украина',
-    'Нью-Йорк': 'США',
-    'Амстердам': 'Нидерланды',
-    'Берлин': 'Германия',
-    'Париж': 'Франция',
-    'Лиссабон': 'Португалия',
-    'Вена': 'Австрия',
+    "Киев": "Украина",
+    "Нью-Йорк": "США",
+    "Амстердам": "Нидерланды",
+    "Берлин": "Германия",
+    "Париж": "Франция",
+    "Лиссабон": "Португалия",
+    "Вена": "Австрия",
 };
 
 function getCities() {
@@ -78,15 +78,15 @@ function getNameOfDay(lang, datNumber) {
     return dayOfWeek;
 }
 
-let russianDay = getNameOfDay('ru', 1);
-let englishDay = getNameOfDay('en', 7);
+let russianDay = getNameOfDay("ru", 1);
+let englishDay = getNameOfDay("en", 7);
 
 console.log(russianDay);
 console.log(englishDay);
 
 //task6
 const personUser = {
-    name: 'Vlad'
+    name: "Vitalii"
 };
 const personAge = {
     age: 1
