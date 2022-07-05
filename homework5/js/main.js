@@ -1,8 +1,12 @@
 //task1
+Array.prototype.getUnique = function () {
+    return [...new Set(this)];
+}
+
+
 const number = [1, 1, 2, 2, 3];
-const getUnique = [...new Set(number)]
- 
-console.log(getUnique);
+
+console.log(number.getUnique());
 
 //task2
 const myObj = {
@@ -10,17 +14,25 @@ const myObj = {
     b: 2,
     c: 3,
     d: false,
-    e: 0
+    e: 0,
 };
 
-function getKeySum(obj) {
-    return Object.keys(obj).reduce((getKeySum, key) => getKeySum + parseFloat(obj[key] || 0), 0);
+Object.prototype.getKeySum = function () {
+    let sum = 0;
+
+    for (let num of Object.keys(this)) {
+        if (!isNaN(num)) {
+            sum += parseFloat(num);
+        }
+    }
+
+    return sum;
 }
 
-console.log(getKeySum(myObj));
+Object.prototype.reversKey = function () {
+    let res = {};
+    let obj = this;
 
-function reversKey(obj) {
-    const res = {};
     Object.keys(obj).forEach(function (value) {
         var key = obj[value];
         res[key] = value;
@@ -28,16 +40,16 @@ function reversKey(obj) {
     return res;
 };
 
-console.log(reversKey(myObj));
+console.log(myObj.reversKey().getKeySum());
 
 //task3
 let holder = document.querySelector('.holder')
 
 for (let i = 1; i <= 5; i++) {
-	let div = document.createElement('div');
+    let div = document.createElement('div');
     div.className = "item"
-	div.innerHTML = i;
-	holder.append(div);
+    div.innerHTML = i;
+    holder.append(div);
 }
 
 let itemClasses = document.querySelectorAll('.item');
@@ -64,6 +76,3 @@ let item5 = itemClasses[4];
 item5.style.background = 'orange';
 item5.style.width = '50%';
 item5.style.order = '-2';
-
-
-
