@@ -1,0 +1,32 @@
+p {
+  cursor: pointer;
+}
+#img-js{
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#img-js.hidden{
+  display: none;
+}
+
+#img-js.bigger{
+  height: 200px;
+  width: 200px;
+}
+.circle-block{
+  position: relative;
+  height: 100px;
+}
+.circle{
+  position: absolute;
+  background-color: crimson;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  left: 0;
+  transition: 5s;
+}
