@@ -1,6 +1,6 @@
 //task1
 let myNodelist = document.getElementsByTagName("LI");
-for (let i = 0; i < myNodelist.length; i++) {
+for (i = 0; i < myNodelist.length; i++) {
     let span = document.createElement("span");
     let txt = document.createTextNode("\u00D7");
     span.className = "close";
