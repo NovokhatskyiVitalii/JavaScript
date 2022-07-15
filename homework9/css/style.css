@@ -1,25 +1,29 @@
-body{
+body {
     background: #000000e3;
 }
-.wrapper{
+
+.wrapper {
     margin: 0 auto;
     width: 1240px;
     background: #b9b8b8e8;
     border-radius: 60px;
 }
-.post{
+
+.post {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-h1{ 
+
+h1 {
     width: 50%;
     margin: 0px;
     padding: 20px;
     font-size: 24px;
-    font-weight:lighter;
+    font-weight: lighter;
 }
-img{
+
+img {
     margin: 20px;
     padding: 20px;
     border: solid 1px;
